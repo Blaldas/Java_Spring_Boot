@@ -1,0 +1,5 @@
+package com.blaldas.costumer.dal.entities;
+
+public class Costumer {
+
+}

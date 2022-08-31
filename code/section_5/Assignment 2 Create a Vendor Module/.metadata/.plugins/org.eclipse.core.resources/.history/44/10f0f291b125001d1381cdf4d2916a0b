@@ -1,0 +1,18 @@
+package com.blaldas.vendor.services;
+
+import java.util.List;
+
+import com.blaldas.vendor.entities.Vendor;
+
+public interface VendorService {
+	
+	Vendor saveLocation(Vendor location);
+	
+	Vendor updateLocation(Vendor location);
+	
+	void deleteLocation(Vendor location);
+	
+	Vendor getLocationById(int id);
+	
+	List<Vendor> getAllLocation();
+}

@@ -1,0 +1,52 @@
+package com.blaldas.vendor.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.blaldas.vendor.entities.Vendor;
+import com.blaldas.vendor.services.VendorService;
+
+@Controller
+public class vendorController {
+
+	@Autowired
+	VendorService service;
+
+	@RequestMapping("/newVendor")	//page url
+	public String showCreate() {
+		return "createVendor";		//returned page html file
+	}
+
+	@RequestMapping("/saveVendor")
+	public String saveVendor(@ModelAttribute("vendor") Vendor vendor, ModelMap map) {
+		service.saveVendor(vendor);
+		map.addAttribute("vendors", service.getAllVendor());
+		return "createVendor";
+	}
+	
+	@RequestMapping("/showAllVendors")
+	public String list(ModelMap map) {
+		map.addAttribute("vendors", service.getAllVendor());
+		return "showAllVendors";
+	}
+	
+	
+	@RequestMapping("/updateVendor")
+	public String updateVendor(@ModelAttribute("id") Integer id, ModelMap map) {
+		map.addAttribute("vendor", service.getVendorById(id));
+		return "updateVendor";
+	}
+	
+	@RequestMapping("/deleteVendor")
+	public String deleteVendor(@ModelAttribute("id") Integer id, ModelMap map) {
+		service.deleteVendor(service.getVendorById(id));
+		map.addAttribute("vendors", service.getAllVendor());
+		return "showAllVendors";
+	}
+	
+	
+	
+}

@@ -1,0 +1,47 @@
+package com.blaldas.vendor.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.blaldas.vendor.entities.Vendor;
+import com.blaldas.vendor.repos.VendorRepository;
+
+@Service
+public class VendorServicesImpl implements VendorService {
+
+	@Autowired
+	VendorRepository repo;
+	
+	@Override
+	public Vendor saveLocation(Vendor location) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Vendor updateLocation(Vendor location) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteLocation(Vendor location) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Vendor getLocationById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Vendor> getAllLocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

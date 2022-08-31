@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;entity&apos; from expression &apos;new Student()&apos;&#x0D;&#x0A;- Original project: &apos;studentdal&apos;&#x0D;&#x0A;- Variable name: &apos;entity&apos;&#x0D;&#x0A;- Destination method: &apos;com.blaldas.student.dal.StudentdalApplicationTests.testCreateStudent()&apos;&#x0D;&#x0A;- Variable expression: &apos;new Student()&apos;" description="Extract local variable &apos;entity&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.blaldas.student.dal{StudentdalApplicationTests.java" name="entity" replace="false" selection="397 13" stamp="1661375027769" varType="false" version="1.0"/>
+</session>

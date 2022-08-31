@@ -1,0 +1,7 @@
+package com.blaldas.vendor.controllers;
+
+import org.springframework.data.repository.CrudRepository;
+
+public class vendorController implements CrudRepository<T, ID> {
+
+}

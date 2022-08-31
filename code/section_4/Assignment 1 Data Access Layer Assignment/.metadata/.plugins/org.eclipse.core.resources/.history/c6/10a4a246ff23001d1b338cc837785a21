@@ -1,0 +1,25 @@
+package com.example.demo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.blaldas.costumer.dal.entities.Costumer;
+import com.blaldas.costumer.dal.repos.CostumerRepository;
+
+@SpringBootTest
+class CostumerApplicationTests {
+	@Autowired
+	CostumerRepository repo;
+	
+	@Test
+	void testSetNewCostumer() {
+		Costumer costumer = new Costumer();
+		costumer.setEmail("mahbva@das.com");
+		costumer.setName("João Lacerda");
+		
+		repo.save(costumer);
+		
+	}
+
+}

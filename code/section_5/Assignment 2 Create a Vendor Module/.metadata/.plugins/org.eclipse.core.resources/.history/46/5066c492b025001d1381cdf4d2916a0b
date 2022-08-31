@@ -1,0 +1,5 @@
+package com.blaldas.vendor.services;
+
+public interface VendorService {
+
+}

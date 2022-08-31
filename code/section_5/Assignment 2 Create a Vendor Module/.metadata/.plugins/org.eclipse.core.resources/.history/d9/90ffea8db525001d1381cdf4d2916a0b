@@ -1,0 +1,26 @@
+package com.blaldas.vendor.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.blaldas.vendor.entities.Vendor;
+import com.blaldas.vendor.services.VendorService;
+
+public class vendorController {
+
+	@Autowired
+	VendorService service;
+
+	@RequestMapping("/showCreate")
+	public String showCreate() {
+		return "createVendor";
+	}
+
+	@RequestMapping("/saveVendor")
+	public String saveVendor(@ModelAttribute("vendor") Vendor vendor) {
+		service.saveVendor(vendor);
+		return "showAllVendors";
+
+	}
+}
