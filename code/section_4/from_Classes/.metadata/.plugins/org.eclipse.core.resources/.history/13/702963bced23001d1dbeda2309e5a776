@@ -1,6 +1,0 @@
-package com.blaldas.student.dal.entities;
-
-public class Student {
-	int id;
-	
-}
