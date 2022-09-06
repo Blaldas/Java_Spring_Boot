@@ -1,0 +1,24 @@
+package com.blaldas.location.util;
+
+import java.util.List;
+
+import org.jfree.chart.ChartFactory;
+import org.jfree.data.general.DefaultPieDataset;
+import org.jfree.data.general.PieDataset;
+
+public class ReportUtilImp implements ReportUtil {
+
+	@Override
+	public void generatePieChart(String path, List<Object> data) {
+		DefaultPieDataset dataset =new DefaultPieDataset();
+		
+		for (Object[] object : data) {
+			dataset.setValue(object[0].toString(), (Number) object[1]);
+		}
+		
+		
+		
+		ChartFactory.createPieChart("Locations Type Report", dataset);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.blaldas.location.util;
+
+public interface EmailUtil {
+
+}
