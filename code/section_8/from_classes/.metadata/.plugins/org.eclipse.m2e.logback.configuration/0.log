@@ -1518,3 +1518,11 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact jfree:jfreech
 2022-09-06 18:52:12,193 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-09-06 18:52:12,193 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marco\Desktop\microservices project\code\section_8\from_classes\locationweb\src\test\resources
 2022-09-06 19:00:18,783 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-07 01:38:43,957 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-07 01:39:36,246 [Worker-9: Launching locationweb - LocationwebApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-07 01:39:36,247 [Worker-9: Launching locationweb - LocationwebApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-07 01:39:36,249 [Worker-9: Launching locationweb - LocationwebApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-07 01:39:36,264 [Worker-9: Launching locationweb - LocationwebApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-09-07 01:39:36,284 [Worker-9: Launching locationweb - LocationwebApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-07 01:39:36,284 [Worker-9: Launching locationweb - LocationwebApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-07 01:39:36,284 [Worker-9: Launching locationweb - LocationwebApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Marco\Desktop\microservices project\code\section_8\from_classes\locationweb\src\test\resources

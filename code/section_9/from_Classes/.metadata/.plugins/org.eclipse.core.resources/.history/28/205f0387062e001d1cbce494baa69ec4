@@ -1,0 +1,13 @@
+package com.blaldas.location.util;
+
+import java.util.List;
+
+public class ReportUtilImp implements ReportUtil {
+
+	@Override
+	public void generatePieChart(String path, List<Object> data) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
