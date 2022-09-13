@@ -3,7 +3,12 @@ package com.blaldas.flightreservation.entities;
 import java.sql.Timestamp;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Flight extends AbstractEntity{
@@ -13,6 +18,9 @@ public class Flight extends AbstractEntity{
 	private String operatingAirlines;
 	private String departureCity;
 	private String arrivalCity;
+	@Column(name = "DATE_OF_DEPARTURE")
+	@DateTimeFormat(pattern="dd/MM/yyyy")
+	@Temporal(TemporalType.DATE)
 	private Date departureDate;
 	private Timestamp estimatedDepartureTime;
 
