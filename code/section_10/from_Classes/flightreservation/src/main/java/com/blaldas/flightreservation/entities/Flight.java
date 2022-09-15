@@ -21,7 +21,7 @@ public class Flight extends AbstractEntity{
 	@Column(name = "DATE_OF_DEPARTURE")
 	@DateTimeFormat(pattern="dd/MM/yyyy")
 	@Temporal(TemporalType.DATE)
-	private Date departureDate;
+	private Date dateOfDeparture;
 	private Timestamp estimatedDepartureTime;
 
 
@@ -57,12 +57,12 @@ public class Flight extends AbstractEntity{
 		this.arrivalCity = arrivalCity;
 	}
 
-	public Date getDepartureDate() {
-		return departureDate;
+	public Date getDateOfDeparture() {
+		return dateOfDeparture;
 	}
 
-	public void setDepartureDate(Date departureDate) {
-		this.departureDate = departureDate;
+	public void setDateOfDeparture(Date departureDate) {
+		this.dateOfDeparture = departureDate;
 	}
 
 	public Timestamp getEstimatedDepartureTime() {
