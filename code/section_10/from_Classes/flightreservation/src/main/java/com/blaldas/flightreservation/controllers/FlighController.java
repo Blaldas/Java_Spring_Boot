@@ -22,10 +22,10 @@ public class FlighController {
 
 	@RequestMapping(value = "/findFlights", method = RequestMethod.POST)
 	public String findFlights(@RequestParam("from") String from, @RequestParam("to") String to,
-			@RequestParam("departureDate") @DateTimeFormat(pattern = "MM-dd-yyyy") Date departureDate,
+			@RequestParam("dateOfDeparture") @DateTimeFormat(pattern = "MM-dd-yyyy") Date dateOfDeparture,
 			ModelMap map) {		
 		
-		List<Flight> flights = flightRepository.findFlights(from, to, departureDate);
+		List<Flight> flights = flightRepository.findFlights(from, to, dateOfDeparture);
 		map.addAttribute("flights", flights);
 
 		return "displayFlights";

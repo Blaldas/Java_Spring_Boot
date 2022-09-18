@@ -20,16 +20,20 @@ public class ReservationRestController {
 
 	@RequestMapping("/reservations/{id}")
 	public Reservation findReservation(@PathVariable("id") int reservationId) {
-		return reservationRepository.findById(reservationId).get();
+		System.out.println("request id: \t" + reservationId + "\nAnswer:");
+		Reservation res = reservationRepository.findById(reservationId).get();
+		System.out.println(res.toString());
+		
+		return res;
 
 	}
-	
+
 	@RequestMapping("/updateReservation")
 	public Reservation updateReservation(@RequestBody ReservationUpdateRequest request) {
 		Reservation reservation = reservationRepository.getReferenceById(request.getId());
 		reservation.setNumberOfBags(request.getNumberOfBags());
 		reservation.setCheckedIn(request.isCheckedIn());
-		
+
 		return reservationRepository.save(reservation);
 	}
 

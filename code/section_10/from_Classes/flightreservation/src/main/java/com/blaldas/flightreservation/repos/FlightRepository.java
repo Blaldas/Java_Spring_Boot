@@ -11,7 +11,7 @@ import com.blaldas.flightreservation.entities.Flight;
 
 public interface FlightRepository extends JpaRepository<Flight, Integer> {
 
-	@Query("from Flight where departureCity=:departureCity and arrivalCity=:arrivalCity and departureDate=:departureDate")
-	List<Flight> findFlights(@Param("departureCity") String from,@Param("arrivalCity") String to,@Param("departureDate") Date departureDate);
+	@Query("from Flight where departureCity=:departureCity and arrivalCity=:arrivalCity and dateOfDeparture=:dateOfDeparture")
+	List<Flight> findFlights(@Param("departureCity") String from,@Param("arrivalCity") String to,@Param("dateOfDeparture") Date dateOfDeparture);
 
 }
