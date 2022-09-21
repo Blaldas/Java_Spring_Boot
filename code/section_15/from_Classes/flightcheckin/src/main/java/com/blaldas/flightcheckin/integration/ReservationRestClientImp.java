@@ -1,5 +1,6 @@
 package com.blaldas.flightcheckin.integration;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -9,7 +10,8 @@ import com.blaldas.flightcheckin.integration.dto.ReservationUpdateRequest;
 @Component
 public class ReservationRestClientImp implements ReservationRestClient {
 
-	private static final String RESERVATION_REST_URL = "http://localhost:8080/flightreservation/";
+	@Value("${com.blaldas.flightcheckin.reservarion.rest.url}")
+	private String RESERVATION_REST_URL;
 
 	@Override
 	public Reservation findReservation(int reservationId) {

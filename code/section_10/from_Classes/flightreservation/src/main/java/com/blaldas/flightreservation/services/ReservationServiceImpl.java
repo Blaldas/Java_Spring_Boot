@@ -3,6 +3,7 @@ package com.blaldas.flightreservation.services;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.blaldas.flightreservation.controllers.ReservationController;
@@ -32,7 +33,8 @@ public class ReservationServiceImpl implements ReservationService {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(ReservationServiceImpl.class);
 	
-	private final String localPDFRepoPath = "C:/Users/Marco/Documents/iteneraries/";
+	@Value("${com.blaldas.flightreservation.itenerary.dirpath}")
+	private String localPDFRepoPath;
 
 
 	@Override
