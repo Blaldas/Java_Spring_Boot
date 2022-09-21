@@ -1,7 +1,8 @@
 package com.blaldas.flightreservation.dto;
 
 public class ReservationRequest {
-	
+
+
 	private int flightId;
 	private String passengerFirstName;
 	private String passengerLastName;
@@ -85,6 +86,13 @@ public class ReservationRequest {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "ReservationRequest [flightId=" + flightId + ", passengerFirstName=" + passengerFirstName
+				+ ", passengerLastName=" + passengerLastName + ", passengerEmail=" + passengerEmail
+				+ ", passengerPhone=" + passengerPhone + ", nameOnTheCard=" + nameOnTheCard + ", cardNumber="
+				+ cardNumber + ", expirationDate=" + expirationDate + ", securityCode=" + securityCode + "]";
+	}
 	
 	
 	

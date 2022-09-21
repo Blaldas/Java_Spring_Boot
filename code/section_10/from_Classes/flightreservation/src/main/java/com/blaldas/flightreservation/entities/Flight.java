@@ -14,6 +14,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Flight extends AbstractEntity{
 
 
+
+
 	private String flightNumber;
 	private String operatingAirlines;
 	private String departureCity;
@@ -71,5 +73,12 @@ public class Flight extends AbstractEntity{
 
 	public void setEstimatedDepartureTime(Timestamp estimatedDepartureTime) {
 		this.estimatedDepartureTime = estimatedDepartureTime;
+	}
+
+	@Override
+	public String toString() {
+		return "Flight [flightNumber=" + flightNumber + ", operatingAirlines=" + operatingAirlines + ", departureCity="
+				+ departureCity + ", arrivalCity=" + arrivalCity + ", dateOfDeparture=" + dateOfDeparture
+				+ ", estimatedDepartureTime=" + estimatedDepartureTime + ", getId()=" + getId() + "]";
 	}
 }

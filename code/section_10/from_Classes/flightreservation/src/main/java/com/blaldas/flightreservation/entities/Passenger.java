@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 public class Passenger extends AbstractEntity{
 
 
+
 	private String firstName;
 	private String lastName;
 	private String middleName;
@@ -52,6 +53,12 @@ public class Passenger extends AbstractEntity{
 		this.email = email;
 	}
 	
+
+	@Override
+	public String toString() {
+		return "Passenger [firstName=" + firstName + ", lastName=" + lastName + ", middleName=" + middleName
+				+ ", phone=" + phone + ", email=" + email + ", getId()=" + getId() + "]";
+	}
 
 
 }
