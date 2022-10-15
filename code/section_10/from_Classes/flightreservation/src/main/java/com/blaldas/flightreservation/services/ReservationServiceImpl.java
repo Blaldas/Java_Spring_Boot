@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.blaldas.flightreservation.controllers.ReservationController;
 import com.blaldas.flightreservation.dto.ReservationRequest;
@@ -18,6 +19,7 @@ import com.blaldas.flightreservation.util.EmailUtil;
 import com.blaldas.flightreservation.util.PDFGenerator;
 
 @Service
+@Transactional
 public class ReservationServiceImpl implements ReservationService {
 
 	@Autowired
